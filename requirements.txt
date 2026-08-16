@@ -1,0 +1,39 @@
+# ===== 核心依赖 =====
+
+# 界面
+PyQt5
+
+# 数据处理 / 题库导入
+pandas
+openpyxl
+
+# 网络请求 / 大模型
+requests
+openai
+
+# 简历 PDF 提取 / 截图 OCR
+PyMuPDF
+pytesseract
+pillow
+
+# 语音识别（本地 Whisper，离线免费）
+faster-whisper
+
+# 录音：麦克风 + WASAPI 系统声音内录（Windows）
+pyaudio
+PyAudioWPatch
+
+# 自动录音语音活动检测（VAD）
+webrtcvad
+
+# 知识库检索
+jieba
+rapidfuzz   # 可选：模糊匹配加速；未安装时自动退回 difflib
+
+
+# ===== 可选：NVIDIA GPU 加速 =====
+# Windows + NVIDIA 独显时安装，asr_server.py 会自动加载其中的 CUDA 运行库（无需安装 CUDA Toolkit）。
+# 无独显请忽略，并把 config.json 中 WHISPER_DEVICE 改为 cpu、WHISPER_COMPUTE_TYPE 改为 int8。
+# nvidia-cublas-cu12
+# nvidia-cudnn-cu12
+# nvidia-cuda-nvrtc-cu12

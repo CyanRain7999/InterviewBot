@@ -1,0 +1,38 @@
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+build/
+dist/
+
+# ---------- 虚拟环境 ----------
+.venv/
+venv/
+env/
+
+# ---------- 配置与密钥（勿上传，请复制 config.example.json 后填写） ----------
+inter/config/config.json
+
+# ---------- 运行时生成 ----------
+inter/knowledge/*
+!inter/knowledge/.gitkeep
+inter/assets/*.wav
+inter/assets/*.png
+inter/prompt/resume_info.txt
+
+# ---------- 大模型文件（体积大，按 README 自行下载） ----------
+models/
+
+# ---------- 题库原始数据（可由 tools/ 重新生成） ----------
+data/
+
+# ---------- 旧备份 / 归档 ----------
+*.bak
+*.bak.*
+
+# ---------- IDE / 系统 ----------
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

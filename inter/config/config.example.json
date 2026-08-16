@@ -1,0 +1,24 @@
+{
+  "API_URL": "https://api.deepseek.com",
+  "MODEL_NAME": "deepseek-v4-flash",
+  "OPENAI_API_KEY": "在这里填入你的大模型 API Key",
+
+  "API_KEY": "在这里填入百度云 API Key",
+  "SECRET_KEY": "在这里填入百度云 Secret Key",
+  "CUID": "interview-self-check-local",
+  "BAIDU_ASR_DEV_PID": 1537,
+
+  "ASR_PROVIDER": "whisper",
+  "WHISPER_RUN_MODE": "server",
+  "WHISPER_SERVER_HOST": "127.0.0.1",
+  "WHISPER_SERVER_PORT": 8765,
+  "WHISPER_SERVER_URL": "http://127.0.0.1:8765/asr",
+  "WHISPER_MODEL": "models/faster-whisper-large-v3-turbo",
+  "WHISPER_DEVICE": "cuda",
+  "WHISPER_COMPUTE_TYPE": "int8_float16",
+  "WHISPER_TIMEOUT": 120,
+
+  "tesseract_path": "D:\\ocr\\tesseract.exe",
+
+  "AUTO_VAD_SILENCE_SECONDS": 2.5
+}
